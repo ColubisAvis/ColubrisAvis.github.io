@@ -11,6 +11,10 @@ echo "Nick: $nick<br>";
 echo "Typ: $typ<br>";
 echo "Temat: $temat<br>";
 echo "Treść: $tresc<br>";
+  if (isset($_POST['userfile']))
+  {
+    $userfile=$_POST['userfile'];
+    echo "$userfile<br>";
 }
 else{
 echo 'Wpisz dane';
