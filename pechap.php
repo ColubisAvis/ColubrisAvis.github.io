@@ -16,6 +16,7 @@ echo "Treść: $tresc<br>";
     $userfile=$_POST['userfile'];
     echo "$userfile<br>";
 }
+}
 else{
 echo 'Wpisz dane';
 }
