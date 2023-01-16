@@ -1,0 +1,55 @@
+﻿<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<style>
+body{
+background-image: url("obrazek7.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+</style>
+<link rel="stylesheet" href="styl.css">
+<title>Wiedźmin - Forum</title>
+</head>
+<body>
+<button id="bstop">Stop</button>
+<button id="bplay">Graj</button>
+<script>
+var snd = new Audio("toss.mp3");
+snd.loop = true;
+snd.autoplay = false;
+document.getElementById("bstop").onclick = function () { snd.pause(); };
+document.getElementById("bplay").onclick = function () { snd.play(); };
+</script>
+<div class="top">
+<h1>Wiedźmin</h1>
+</div>
+<div class="menu">
+<a href="menu.html">⇦ Powrót</a> | <a href="fani.html"> Dla fanów</a> | <a href="fanart.html">Fanarty i cosplaye</a> | <a href="memy.html">Memy</a> | <a href="forum.html">Forum</a> | <a href="kontakt.html">Kontakt</a> 
+</div>
+<div class="inf">
+<h2>Witaj na forum!</h2>
+<p>Znajdziesz tu odpowiedzi na swoje pytania i porozmawiasz z innymi osobami zainteresowanymi na ten sam temat! Zacznij od razu, zadaj pytanie lub odpowiedz na jakieś!</p>
+<div class="form-center">
+<form enctype="multipart/form-data" action="pechap.php" method="post">
+   <input type=email name="email" placeholder="Email"/><br/>
+   <input type=text name="nick" size="10" placeholder="Nick"/><br/>
+<p align="center">Pytanie<input type=radio name=typ value="pytanie"/>&nbsp;&nbsp;&nbsp;&nbsp;Informacje<input type=radio name=typ value="informacja"/></p><br>
+   <input type=text name="temat" size="15" size="80" placeholder="Temat"/><br/>
+   <textarea id="tresc"rows="4" cols="50" name ="tresc" placeholder="Treść"></textarea><br/>
+  <input type="hidden" name="MAX_FILE_SIZE" value="30000"/>
+  Dołącz plik: <input type="file" name="userfile" size="20">
+  </br>
+  <input type=submit value="Wyślij" />
+  </form>
+</div>
+</div>
+<div class="footer">
+<a href="#top">Wiedźmin</a> | Marta Kolanko
+</div>
+
+</body>
+
+</html>

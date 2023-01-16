@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<style>
+body{
+background-image: url("obrazek1.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+</style>
+<link rel="stylesheet" href="styl.css">
+<title>Wiedźmin - Książki</title>
+<script src="js1.js"></script>
+<style> td { border: 2px solid grey; } </style>
+</head>
+<body>
+<button id="bstop">Stop</button>
+<button id="bplay">Graj</button>
+<script>
+var snd = new Audio("toss.mp3");
+snd.loop = true;
+snd.autoplay = false;
+document.getElementById("bstop").onclick = function () { snd.pause(); };
+document.getElementById("bplay").onclick = function () { snd.play(); };
+</script>
+<div class="top">
+<h1>Wiedźmin</h1>
+</div>
+<div class="menu">
+<a href="menu.html">Strona Główna</a> | <a href="postaci.html">Postaci</a> | <a href="#" onClick="uwaga()">Książki i komiksy</a> | <a href="filmy.html">Filmy i seriale</a> | <a href="gry.html">Gry</a> | <a href="fani.html">Dla fanów</a>
+</div>
+<div class="inf">
+<h2 id="to9">Opowiadania, książki i komiksy</h2>
+<table>
+   <tr>
+      <td rowspan="4"><a href="#opowiadania">Opowiadania</a></td> <td><a href="#wiedzmin"><em>Wiedźmin</em></a></td>
+   </tr>
+   <tr>
+      <td><a href="#miecz_przeznaczenia"><em>Miecz Przeznaczenia</em></a></td>
+   </tr>
+   <tr>
+      <td><a href="#ostatnie_zyczenie"><em>Ostatnie życzenie</em></a></td>
+   </tr>
+   <tr>
+      <td><a href="#cos_sie_konczy"><em>Coś się kończy, coś się zaczyna</em></a></td>
+   </tr>
+   <tr>
+      <td rowspan="6"><a href="#ksiazki">Książki</a></td> <td><a href="#krew_elfow"><em>Krew elfów</em></a></td>
+   </tr>
+   <tr>
+      <td><a href="#czas_pogardy"><em>Czas pogardy</em></a></td>
+   </tr>
+   <tr>
+      <td><a href="#chrzest_ognia"><em>Chrzest ognia</em></a></td>
+   </tr>
+   <tr>
+      <td><a href="#wieza_jaskolki"><em>Wieża Jaskółki</em></a></td>
+   </tr>
+   <tr>
+      <td><a href="#pani_jeziora"><em>Pani Jeziora</em></a></td>
+   </tr>
+   <tr>
+      <td><a href="#sezon_burz"><em>Sezon burz</em></a></td>
+   </tr>
+   <tr>
+      <td rowspan="2"><a href="#komiksy">Komiksy</a></td> <td><a href="#komiks_pl">komiks polski</a></td>
+   </tr>
+   <tr>
+      <td><a href="#komiks_am">komiks amerykański</a></td>
+   </tr>
+</table>
+<br><br>
+<a name="opowiadania"><h2 id="to21">Opowiadania</h2></a>
+<p id="to22"><span style="font-size: x-large"><a name="wiedzmin">"Wiedźmin"</a></span></p>
+<table>
+<tr>
+<td><p>Zbiór opowiadań, książkowy debiut Andrzeja Sapkowskiego. Zawiera pięć opowiadań o wiedźminie Geralcie opublikowanych w latach 1986–1990 w czasopiśmie <em>Fantastyka</em>. Książka została opublikowana nakładem wydawnictwa Reporter w roku 1990, w nakładzie 30 tys. egzemplarzy. Cztery opowiadania wiedźmińskie z tego zbioru zostały wydane później w tomie <em>Ostatnie życzenie</em>, a opowiadanie <em>Droga, z której się nie wraca</em> w zbiorze <em>Coś się kończy, coś się zaczyna</em> oraz w pierwszym tomie <em>Opowieści o wiedźminie</em>.</p></td>
+</tr>
+</table>
+<p id="to10"><span style="font-size: x-large"><a name="miecz_przeznaczenia">"Miecz Przeznaczenia"</a></span></p>
+<table>
+<tr>
+<td><p>Zbiór opowiadań z gatunku fantasy, napisanych przez Andrzeja Sapkowskiego. Wydany w 1992 roku przez Niezależną Oficynę Wydawniczą Nowa. Opowiadania z tego tomu stanowią wprowadzenie do sagi o Geralcie z Rivii i razem z Ostatnim życzeniem wyjaśniają najważniejsze wydarzenia w życiu głównych bohaterów cyklu.</td>
+<td><a href="https://image.ceneostatic.pl/data/products/32692743/i-miecz-przeznaczenia-wiedzmin-tom-2.jpg"><img src="miecz_przeznaczenia.png" alt="Miecz Przeznaczenia" style="float: right; margin: 8px"></a></td>
+</tr>
+</table>
+<p id="to11"><span style="font-size: x-large"><a name="ostatnie_zyczenie">"Ostatnie życzenie"</a></span></p>
+<table>
+<tr>
+<td><a href="https://image.ceneostatic.pl/data/products/32692858/i-ostatnie-zyczenie-wiedzmin-tom-1.jpg"><img src="ostatnie_zyczenie.png" alt="Ostatnie życzenie" style="float: right; margin: 8px"></a></td>
+<td><p>Zbiór opowiadań fantasy, napisanych przez Andrzeja Sapkowskiego i stanowiących wstęp do cyklu o wiedźminie Geralcie. Został wydany przez wydawnictwo superNowa w 1993 roku, a wydanie drugie w roku 2003. Skonstruowany na zasadzie powieści szkatułkowej, składa się z opowiadania przewodniego <em>Głos rozsądku</em>, przerywanego przez pozostałe opowiadania, wyjaśniające, uzupełniające i tworzące spójną historię Geralta z Rivii. Opowiadania <em>Kwestia ceny</em>, <em>Ziarno prawdy</em>, <em>Mniejsze zło</em> i <em>Wiedźmin</em> ukazały się wcześniej w czasopiśmie <em>Fantastyka</em> oraz w zbiorze opowiadań <em>Wiedźmin</em>.</td>
+</tr>
+</table>
+<p id="to12"><span style="font-size: x-large"><a name="cos_sie_konczy">"Coś się kończy, coś się zaczyna"</a></span></p>
+<table>
+<tr>
+<td><p>Zbiór ośmiu opowiadań z gatunku fantasy, napisanych przez Andrzeja Sapkowskiego. Każde poprzedzone jest komentarzem odautorskim, zostało ponownie zredagowane, przez co stało się wierniejsze oryginałowi. Zbiór został wydany w roku 2000. W roku 2012 zbiór rozszerzono o opowiadania <em>Maladie</em> oraz o <em>Spanienkreuz</em> i wydano pod wspólnym tytułem <em>Maladie i inne opowiadania.</em></td>
+<td><a href="https://ecsmedia.pl/c/cos-sie-konczy-cos-sie-zaczyna-b-iext66617469.jpg"><img src="cos_sie_konczy.jpg" alt="Coś się kończy, coś się zaczyna" style="float: right; margin: 8px"></a></td>
+</tr>
+</table>
+<br><br>
+<a name="ksiazki"><h2 id="to23">Książki</h2></a>
+<p id="to13"><span style="font-size: x-large"><a name="krew_elfow">"Krew elfów"</a></span></p>
+<table>
+<tr>
+<td><a href="https://image.ceneostatic.pl/data/products/33143711/i-krew-elfow-wiedzmin-tom-3.jpg"><img src="krew_elfow.png" alt="Krew elfów" style="float: right; margin: 8px"></a></td>
+<td><p>Powieść fantasy autorstwa Andrzeja Sapkowskiego, pierwszy raz wydana w 1994 roku. Jest pierwszą z pięciu części sagi o wiedźminie tego autora. W 2009 zdobyła David Gemmell Awards for Fantasy. Akcja powieści rozgrywa się w quasi-średniowiecznej allotopii i jest kontynuacją wcześniejszych opowiadań. Geopolitycznie świat jest podzielony dwubiegunowo na cesarstwo Nilfgaardu, rządzone absolutystycznie przez imperatora Emhyra var Emreisa oraz Nordlingów – państwa północne, m.in. Rivię, Temerię, Redanię, Cintrę i Aedirn, w których panuje jeden język, nazywany wspólnym.</td>
+</tr>
+</table>
+<p id="to14"><span style="font-size: x-large"><a name="czas_pogardy">"Czas pogardy"</a></span></p>
+<table>
+<tr>
+<td><p>Powieść z gatunku fantasy, napisana przez Andrzeja Sapkowskiego, wydana w 1995. Jest drugą z pięciu części sagi o wiedźminie tego autora. Czarodziejka Yennefer wraz z Ciri jadą do Gors Velen i dalej na Wyspę Thanedd. W Hirundum spotykają się z Geraltem. Yennefer zamierza oddać Ciri do Szkoły Czarodziejek - Aretuzy. W tym czasie na Thanedd odbywa się wielki zjazd magów.</td>
+<td><a href="https://s.lubimyczytac.pl/upload/books/240000/240513/490975-352x500.jpg"><img src="czas_pogardy.jpg" alt="Czas pogardy" style="float: right; margin: 8px"></a></td>
+</tr>
+</table>
+<p id="to15"><span style="font-size: x-large"><a name="chrzest_ognia">"Chrzest ognia"</a></span></p>
+<table>
+<tr>
+<td><a href="https://s.lubimyczytac.pl/upload/books/240000/240524/490978-352x500.jpg"><img src="chrzest_ognia.jpg" alt="Chrzest ognia" style="float: right; margin: 8px"></a></td>
+<td><p>Powieść z gatunku fantasy, napisana przez Andrzeja Sapkowskiego, wydana w 1996. Jest trzecią z pięciu części tzw. sagi o wiedźminie. Wiedźmin Geralt po wyleczeniu się w lesie Brokilon i zasięgnięciu informacji od łuczniczki Milvy wyrusza wraz z Jaskrem, by uratować Ciri. Ruszają wzdłuż rzeki Wstążki na zachód w kierunku Verden. Wpadają na havekarów – kupców handlujących ze Scoia'tael, do których przybywa kilku nilfgaardzkich rycerzy. Dochodzi do walki, w której Geraltowi i Jaskrowi z pomocą nagle nadciąga Milva. Po walce okazuje się, że havekarzy wieźli zamkniętego w trumnie Cahira aep Ceallacha, którego dostarczył im Isengrim Faolitiarna – dowódca elfiego komanda z Thanedd.</td>
+</tr>
+</table>
+<p id="to16"><span style="font-size: x-large"><a name="wieza_jaskolki">"Wieża Jaskółki"</a></span></p>
+<table>
+<tr>
+<td><p>Powieść z gatunku fantasy, napisana przez Andrzeja Sapkowskiego, wydana w 1997. Jest czwartą z pięciu części sagi o wiedźminie tego autora. Ranna i ledwo żywa Ciri zostaje odnaleziona na bagnach Pereplutu przez pustelnika Vysogotę z Corvo, który zaczyna się nią opiekować. Między młodą dziewczyną i starym wykładowcą oxenfurckiej uczelni stopniowo nawiązuje się przyjaźń. Cirilla postanawia opowiedzieć mu swoją historię. Tymczasem kompania wiedźmina Geralta ucieka z armii królowej Meve, przekracza Jarugę i wraz z gromadą bartników udaje się na południe w stronę Gór Amell, by odnaleźć poszukiwanych druidów.</td>
+<td><a href="https://image.ceneostatic.pl/data/products/33143703/i-wieza-jaskolki-wiedzmin-tom-6.jpg"><img src="wieza_jaskolki.png" alt="Wieża Jaskółki" style="float: right; margin: 8px"></a></td>
+</tr>
+</table>
+<p id="to17"><span style="font-size: x-large"><a name="pani_jeziora">"Pani Jeziora"</a></span></p>
+<table>
+<tr>
+<td><a href="https://image.ceneostatic.pl/data/products/33143702/i-pani-jeziora-wiedzmin-tom-7.jpg"><img src="pani_jeziora.png" alt="Pani Jeziora" style="float: right; margin: 8px"></a></td>
+<td><p>Powieść z gatunku fantasy, napisana przez Andrzeja Sapkowskiego, wydana w 1999. Jest ostatnią z pięciu części sagi o wiedźminie. Ciri dostaje się do władanego przez Auberona królestwa Aen Elle – Ludu Olch, po którym jej przewodnikiem staje się elf Avallac'h. Wiedźmińska drużyna opuszcza Caed Myrkvid, gdyż bytujący tam druidzi odmawiają jakiejkolwiek pomocy. Gdy Ciri dowiaduje się od Avallac'ha, czego żąda od niej Król Olch postanawia zrobić wszystko, by uciec z krainy Aen Elle. Niespodziewanie pomagają jej w tym – również zamieszkujące tę krainę – jednorożce.</td>
+</tr>
+</table>
+<p id="to18"><span style="font-size: x-large"><a name="sezon_burz">"Sezon Burz"</a></span></p>
+<table>
+<tr>
+<td><p>Powieść fantasy autorstwa Andrzeja Sapkowskiego, wydana 6 listopada 2013 roku. Akcja powieści rozgrywa się w świecie wiedźmińskim, w którym osadzona jest również fabuła Sagi o wiedźminie tego samego autora. Głównym miejscem, w którym rozgrywa się akcja jest królestwo Kerack oraz okoliczne ziemie.
+
+Głównym bohaterem powieści jest wiedźmin Geralt z Rivii – najemny łowca potworów, za młodu poddany morderczemu treningowi i mutacjom w wiedźmińskiej warowni Kaer Morhen, który ze względu na swoją odmienność (zmiany wyglądu spowodowane mutacją), jest traktowany przez społeczeństwo w najlepszym wypadku jako zło konieczne.
+
+Książka nie jest bezpośrednią kontynuacją <em>Pani Jeziora</em> – poprzedniej książki Sapkowskiego o Geralcie. Jej akcja osadzona została na krótko przed wydarzeniami z opowiadania <em>Wiedźmin</em>.</td>
+<td><a href="https://s.lubimyczytac.pl/upload/books/199000/199630/490986-352x500.jpg"><img src="sezon_burz.jpg" alt="Sezon burz" style="float: right; margin: 8px"></a></td>
+</tr>
+</table>
+<br><br>
+<a name="komiksy"><h2 id="to24">Komiksy</h2></a>
+<p id="to19"><span style="font-size: x-large"><a name="komiks_pl">Komiks polski</a></span></p>
+<table>
+<tr>
+<td><p>Seria sześciu komiksów Macieja Parowskiego (scenariusz), Bogusława Polcha (rysunki) i Danuty Polch (kolory), z których pięć jest adaptacją wybranych opowiadań Andrzeja Sapkowskiego o wiedźminie ze zbiorów <em>Ostatnie życzenie</em> i <em>Miecz przeznaczenia</em> a jeden jest dziełem autorskim. Komiksy zostały wydane przez Prószyński i S-ka w latach 1993–1995 w magazynie <em>Komiks</em>. Seria została wznowiona w 2001 roku w wersji dwutomowej a w 2015 roku w jednym tomie (z poprawioną kolorystyką i ujednoliconym liternictwem).</p></td>
+</tr>
+</table>
+<p id="to20"><span style="font-size: x-large"><a name="komiks_am">Komiks amerykański</a></span></p>
+<table>
+<tr>
+<td><p>Seria komiksowa wydawana przez Dark Horse Comics od 2014 roku. Jest to próba przedstawienia prozy Andrzeja Sapkowskiego o Wiedźminie w postaci komiksu. Pierwszą taką próbą była seria komiksów o takim samym tytule, której autorami byli Maciej Parowski oraz Bogusław Polch. Drugą był dwuczęściowy komiks <em>Racja stanu</em> Arkadiusza Klimka do scenariusza Michała Gałka, bazujący na postaci z gry. Komiks wydawnictwa Dark Horse nie jest adaptacją książek prozy Andrzeja Sapkowskiego o Wiedźminie, a tylko czerpie z nich inspiracje. Scenarzystą pierwszych trzech tomów jest Paul Tobin. Czwartego tomu Aleksandra Motyka (która pracowała przy grze Wiedźmin 3: Dziki Gon). Natomiast tomu piątego Bartosz Sztybor. Ilustracją poszczególnych części zajmowali się kolejno: Joe Querio, Piotr Kowalski, Marianna Strychowska, Amad Mir. W Polsce serię wydaje wydawnictwo Egmont.</p></td>
+</tr>
+</table>
+</div>
+<div class="footer">
+<a href="#top">Wiedźmin</a> | Marta Kolanko
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html lang="pl">
+<head>
+<style>
+body{
+background-image: url("obrazek2.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+</style>
+<style> td { border: 0px; } </style>
+<link rel="stylesheet" href="styl.css">
+<title>Wiedźmin - Filmy</title>
+<script src="js1.js"></script>
+</head>
+<body>
+<button id="bstop">Stop</button>
+<button id="bplay">Graj</button>
+<script>
+var snd = new Audio("toss.mp3");
+snd.loop = true;
+snd.autoplay = false;
+document.getElementById("bstop").onclick = function () { snd.pause(); };
+document.getElementById("bplay").onclick = function () { snd.play(); };
+</script>
+<div class="top">
+<h1>Wiedźmin</h1>
+</div>
+<div class="menu">
+<a href="menu.html">Strona Główna</a> | <a href="postaci.html">Postaci</a> | <a href="ksiazki.html">Książki i komiksy</a> | <a href="#" onClick="uwaga()">Filmy i seriale</a> | <a href="gry.html">Gry</a> | <a href="fani.html">Dla fanów</a>
+</div>
+<div class="inf">
+<h2 id="to38">Adaptacje filmowe i serialowe</h2>
+<p id="to39"><strong><span style="font-size: x-large">"Wiedźmin" (film 2001)</span></strong></p>
+<table>
+<tr>
+<td>Polski film fantasy z 2001 roku w reżyserii Marka Brodzkiego. Film jest adaptacją opowiadań o Wiedźminie polskiego pisarza fantasy, Andrzeja Sapkowskiego. Scenariusz napisał Michał Szczerbic. Rolę tytułową powierzono Michałowi Żebrowskiemu. Muzykę skomponował Grzegorz Ciechowski. Film został stworzony jako dodatkowy efekt prac nad serialem telewizyjnym, którego premiera miała miejsce jesienią 2002 roku.</td>
+<td><a href="https://filmowy.pl/assets/images/covers/15001-20000/wiedzmin-2001-okladka-dvd-cover.jpg"><img src="wiedzmin_film.jpg" alt="Wiedźmin 2001" style="float: right; margin: 8px"></a></td>
+</tr>
+</table>
+<p id="to40"><strong><span style="font-size: x-large">"Wiedźmin" (serial 2002)</span></strong></p>
+<table>
+<tr>
+<td><a href="https://assets.upflix.pl/media/plakat/2002/wiedzmin__300_427.jpg"><img src="wiedzmin_serial.jpg" alt="Wiedźmin 2002" style="float: right; margin: 8px"></a></td>
+<td>Wiedźmin – polski serial telewizyjny z gatunku fantasy emitowany od 22 września do 15 grudnia 2002 na antenie TVP2, oparty na serii opowiadań Andrzeja Sapkowskiego ze zbiorów <em>Ostatnie życzenie</em> i <em>Miecz przeznaczenia</em>.</td>
+</tr>
+</table>
+<p id="to41"><strong><span style="font-size: x-large">"Wiedźmin" (serial 2019)</span></strong></p>
+<table>
+<tr>
+<td>Amerykańsko-polski telewizyjny serial fantasy, stworzony przez Lauren S. Hissrich na podstawie książek Andrzeja Sapkowskiego o wiedźminie Geralcie. Ośmioodcinkowa pierwsza seria udostępniona została w całości 20 grudnia 2019 w serwisie Netflix. Drugi sezon serialu pojawił się 17 grudnia 2021.</td>
+<td><a href="https://www.crew-united.com/Media/Images/1426/1426982/1426982.entity.jpg"><img src="serial.jpg" alt="Wiedźmin 2019" style="float: right; margin: 8px"></a></td>
+</tr>
+</table>
+<p id="to42"><strong><span style="font-size: x-large">"Wiedźmin: Zmora Wilka"</span></strong></p>
+<table>
+<tr>
+<td><a href="https://proanima.pl/wp-content/uploads/2021/09/zmora-otwierajace-1.jpg"><img src="zmora_wilka.jpg" alt="Wiedźmin: Zmora Wilka" style="float: right; margin: 8px"></a></td>
+<td>Animowany film akcji dark fantasy z 2021 roku, którego reżyserem jest Kwang Il Han, a scenarzystą Beau DeMayo. Film jest spin-offem i prequelem serialu <em>Wiedźmin</em>. Opowiada o młodości wiedźmina Vesemira, przyszłego mentora Geralta, który kierował się głównie zyskiem, nie zważając na konsekwencje swych uczynków.</tr>
+</table>
+</div>
+<div class="footer">
+<a href="#top">Wiedźmin</a> | Marta Kolanko
+</div>
+
+</body>
+
+</html>

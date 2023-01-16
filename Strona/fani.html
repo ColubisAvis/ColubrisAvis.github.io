@@ -1,0 +1,49 @@
+﻿<!doctype html>
+<html lang="pl">
+<head>
+<style>
+body{
+background-image: url("obrazek4.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+</style>
+<link rel="stylesheet" href="styl.css">
+<title>Wiedźmin - Dla fanów</title>
+<script src="js1.js"></script>
+</head>
+<body>
+<button id="bstop">Stop</button>
+<button id="bplay">Graj</button>
+<script>
+var snd = new Audio("toss.mp3");
+snd.loop = true;
+snd.autoplay = false;
+document.getElementById("bstop").onclick = function () { snd.pause(); };
+document.getElementById("bplay").onclick = function () { snd.play(); };
+</script>
+<div class="top">
+<h1>Wiedźmin</h1>
+</div>
+<div class="menu">
+<a href="menu.html">⇦ Powrót</a> | <a href="#" onClick="uwaga()"> Dla fanów</a> | <a href="fanart.html">Fanarty i cosplaye</a> | <a href="memy.html">Memy</a> | <a href="forum.html">Forum</a> | <a href="kontakt.html">Kontakt</a> 
+</div>
+<div class="inf">
+<h2 id="to43">Witaj na stronie dla osób interesujących się Wiedźminem!</h2>
+<p> Tutaj możesz przeglądać prace innych osób, dodawać je do swoich ulubionych, a nawet sam będziesz mógł/będziesz mogła dodwać swoje dzieła, np:</p>  
+<ul>
+  <li><a href="fanart.html">Fanarty</a></li>
+  <li><a href="fanart.html">Cosplaye</a></li>
+  <li><a href="memy.html">A nawet memy</a></li>
+</ul>
+<p>Jeśli masz jakieś pytania, możesz się nimi podzielić na naszym <a href="forum.html">forum</a>. Udzielą ci wtedy odpowiedzi inne osoby akurat aktywne lub administrator strony. Jeśli dalej czegoś nie rozumiesz, masz pytania bądź pomysły na dalszy rozwój tej strony - nie wahaj się i <a href="kontakt.html">skontaktuj się z nami</a>.
+<p>Tylko pamiętaj o tym, aby bawić się dobrze i doceniać pracę innych.
+</div>
+<div class="footer">
+<a href="#top">Wiedźmin</a> | Marta Kolanko
+</div>
+
+</body>
+
+</html>

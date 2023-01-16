@@ -1,0 +1,101 @@
+﻿<!doctype html>
+<html lang="pl">
+<head>
+<style>
+body{
+background-image: url("obrazek8.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+</style>
+<style> td { border: 2px solid grey; } </style>
+<link rel="stylesheet" href="styl.css">
+<title>Wiedźmin - Kontakt</title>
+<script src="js1.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+        crossorigin="anonymous"></script>
+        <script>
+            function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                   document.getElementById("demo3").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "ajax_info.txt", true);
+             xhttp.send();
+}
+</script>
+<script src="jquary2.js"></script>
+<script src="ajax.js"></script>
+<script>
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color", "white");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color", "grey");
+  });
+});
+</script>
+</head>
+<body>
+<button id="bstop">Stop</button>
+<button id="bplay">Graj</button>
+<script>
+var snd = new Audio("toss.mp3");
+snd.loop = true;
+snd.autoplay = false;
+document.getElementById("bstop").onclick = function () { snd.pause(); };
+document.getElementById("bplay").onclick = function () { snd.play(); };
+</script>
+<div class="top">
+<h1>Wiedźmin</h1>
+</div>
+<div class="menu">
+<a href="menu.html">⇦ Powrót</a> | <a href="fani.html"> Dla fanów</a> | <a href="fanart.html">Fanarty i cosplaye</a> | <a href="memy.html">Memy</a> | <a href="forum.html">Forum</a> | <a href="#" onClick="uwaga()">Kontakt</a> 
+</div>
+<div class="inf">
+<h2 id="to25">Kontakt do nas</h2>
+<p id="to26">Jeśli masz pytania, lub potrzebujesz odpowiedzi, których nie uzyskałeś na forum, albo masz pomysły co do rozwijania strony, możesz się skontaktować ze mną:</p>
+<table>
+<tr>
+      <td>Numer telefonu</td> <td>
+        <div id="demo3"></div>
+        <button type="button" id="przycisk" onclick="loadDoc()">Pokaż numer</button>
+      </td>
+   </tr>
+   <tr>
+      <td>Adres mailowy</td> <td><a href="mailto:e-mail">marta.konto@onet.pl</a></td>
+   </tr>
+</table>
+<br> <br>
+<section class ="inf-f">
+<p>
+</p><h3 id="to27">Propozycje kolejnych podstron</h3>
+<p class="akapit">
+<div class="form-center">
+<form>
+Podaj swój adres e-mail: <input type="text" name="e-mail"><br>
+Zaproponuj nową podstronę: <input type="text" name="podstrona"><br>
+<input type="submit" value="Wyślij">
+<input type="reset">
+</form>
+</div>
+<div id="to28">
+<button id="totu">Sprawdź</button>
+</div>
+</section>
+<div id="div1"></div>
+</div>
+<div class="footer">
+<a href="#top">Wiedźmin</a> | Marta Kolanko
+</div>
+</body>
+
+</html>

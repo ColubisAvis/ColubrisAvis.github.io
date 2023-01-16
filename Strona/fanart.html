@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<style>
+body{
+background-image: url("obrazek5.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+</style>
+<link rel="stylesheet" href="styl.css">
+<title>Wiedźmin - Fanarty</title>
+</head>
+<body>
+<button id="bstop">Stop</button>
+<button id="bplay">Graj</button>
+<script>
+var snd = new Audio("toss.mp3");
+snd.loop = true;
+snd.autoplay = false;
+document.getElementById("bstop").onclick = function () { snd.pause(); };
+document.getElementById("bplay").onclick = function () { snd.play(); };
+</script>
+<div class="top">
+<h1>Wiedźmin</h1>
+</div>
+<div class="menu">
+<a href="menu.html">⇦ Powrót</a> | <a href="fani.html"> Dla fanów</a> | <a href="fanart.html">Fanarty i cosplaye</a> | <a href="memy.html">Memy</a> | <a href="forum.html">Forum</a> | <a href="kontakt.html">Kontakt</a> 
+</div>
+<div class="inf">
+<h2>Już niedługo...</h2>
+<p>Już niedługo będziesz mógł udostępniać swoje dzieła i podziwiać prace innych osób!</p>
+</div>
+<div class="footer">
+<a href="#top">Wiedźmin</a> | Marta Kolanko
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<script>
+  function funkcja() {
+    document.getElementById("to1").innerHTML = "Twórca Wiedźmina (ur. 21 czerwca 1948 roku)";
+  }
+  </script>
+<style>
+body{
+background-image: url("beznazwy.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+</style>
+<link rel="stylesheet" href="styl.css">
+<title>Wiedźmin - Strona Głowna</title>
+<script src="js1.js"></script>
+<script src="zmiana.js"></script>
+</head>
+<body>
+<button id="demo"></button>
+<script>
+ setInterval(() => {
+var d = new Date();
+d.setFullYear(1270, 3, 14);
+document.getElementById("demo").innerHTML = d.toLocaleString();
+ }, 1000);
+</script>
+<button id="bstop">Stop</button>
+<button id="bplay">Graj</button>
+<script>
+var snd = new Audio("toss.mp3");
+snd.loop = true;
+snd.autoplay = false;
+document.getElementById("bstop").onclick = function () { snd.pause(); };
+document.getElementById("bplay").onclick = function () { snd.play(); };
+</script>
+<div class="top">
+<h1>Wiedźmin</h1>
+</div>
+<div class="menu">
+<a href="#" onClick="uwaga()">Strona Główna</a> | <a href="postaci.html">Postaci</a> | <a href="ksiazki.html">Książki i komiksy</a> | <a href="filmy.html">Filmy i seriale</a> | <a href="gry.html">Gry</a> | <a href="fani.html">Dla fanów</a>
+</div>
+<div class="inf">
+<h2><strong>Wiedźmin, to znany na cały świat koncept, który zapoczątkował Andrzej Sapkowski - pisarz fantasy, które swoje korzenie ma właśnie w Polsce.</strong> </h2>
+<p> Do samego Wiedźmina zaliczają się: </p>
+<ul>
+  <li> <a href="ksiazki.html">Książki (pięć książek z Sagi, cztery opowiadania i <em>fanowska książka</em>)</a> </li>
+  <li> <a href="ksiazki.html">Komiksy (sześć części wydania polskiego oraz sześć części wydania amerykańskiego</a></li>
+  <li><a href="filmy.html">Filmy </a></li>
+  <li><a href="filmy.html">Seriale </a></li>
+  <li><a href="gry.html">Seria gier komputerowych, a także przeglądarkowych</a></li>
+</ul>
+<p>O wszystkich z tych rzeczy można dowiedzieć się na mojej stronie internetowej. Wystarczy, że otworzysz odpowiednią zakładkę i już możesz zabierać się do czytania o histori, przygodach czy zmaganiach tytułowego Wiedźmina. </p>
+<p>Strona główna została poświęcona człowiekowi, dzięki któremu świat ujrzał <em>Wiedźmina</em>. Bez niego, nie byłoby ani serialu, ani filmów, ani komiksów, a co najważniejsze - nie byłoby żadnych książek. Tą stonę poświecam <strong>Andrzejowi Sapkowskiemu</strong>.</p>
+<br>
+<h3 id="to1" onclick="funkcja()"> Andrzej Sapkowski (ur. 21 czerwca 1948 roku)</h3>
+<div class="zdj">
+<img id="iImg" class="bottom" src="sapkowski.jpg" alt="Andrzej Sapkowski" style="float: right; margin: 8px" onclick="fSetImg()">
+</div>
+<p>Polski pisarz fantasy, a z wykształcenia - ekonomista. Zadziwiające? Zadziwiające może być to, że jego książki są drugimi najczęstrzymi (zaraz po Stanisławie Lemie) powieściami tłumaczonymi z języka polskiego na inne języki. Otrzymał on wiele nagród polskich, jak i zagranicznych, np.: został on doceniony w Czechach, Rosji, Hiszpanii, Anglii czy Finlandii. Jego saga jest tak lubiana i podziwniana, że na jej podstawie można zobaczyć film, serial, grać w gry komputerowe, gry internetowe, gry na telefon komórkowy, a nawet - zbierać monety kolekcjonerskie. Można również zapisać się do <em> Witcher School </em> czyli polską szkołę wiedźminów, która oferuje aż 4 dni, jak zresztą sami piszą na stronie, intensywnego treningu, wcielenie się w postacie z książek, rywalizacje i własnoręcznie robione pamiątki.</p>
+<p id="to"> Więcej informacji możesz znaleźć na<a href="https://pl.wikipedia.org/wiki/Andrzej_Sapkowski"> Wikipedii</a>.</p>
+<br>
+<br>
+</div>
+<div class="footer">
+<a href="#top">Wiedźmin</a> | Marta Kolanko
+</div>
+</body>
+</html>
