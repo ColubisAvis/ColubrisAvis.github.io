@@ -15,3 +15,4 @@ echo "Treść: $tresc<br>";
 else{
 echo 'Wpisz dane';
 }
+?>
